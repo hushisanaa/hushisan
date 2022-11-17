@@ -1,48 +1,276 @@
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>康文昌的在线HTML 教学小工具</title>
-    <style>  
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>胡十三的网页</title>
+    <style>
       body {
         margin: 0;
+        height: 100vh;
+        background-color: rgb(207, 207, 211);
+      }
+      /* * {
+        border: 1px solid black;
+      } */
+      .flex {
+        display: flex;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .baise {
+        background-color: white;
+      }
+      .yinying {
+        box-shadow: 5px 5px 5px #4b4a4ab9;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgl10 {
+        margin-left: 8px;
+      }
+      .mgr10 {
+        margin-right: 10px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+      .daohang {
+        padding: 10px 20px;
+        border-bottom: 1px solid rgb(252, 252, 252);
+        font-size: 14px;
+        color: #666;
+      }
+      .touxiang {
+        margin: 8px;
+      }
+      .juzhong {
+        text-align: center;
+      }
+      .biaoti {
+        background-color: rgb(33, 57, 134);
+      }
+      .mgt40 {
+        margin-top: 60px;
+      }
+      p{
+        line-height: 1.8;
+        text-indent:2em;
+      }
+      /* 当屏幕宽度小于600时的css */
+      @media (max-width: 600px) {
+        .cebianlan {
+          display: none;
+        }
+        .neirong {
+          flex-direction: column;
+        }
+        .shuju {
+          flex-direction: column;
+        }
+        .youbian {
+          margin-left: 10px;
+        }
+        .shujukuai {
+          margin: 0 0 8px;
+          flex: auto;
+        }
       }
     </style>
   </head>
-   <body>
-	  <div style="
-     padding:50px ;
-     background-color:#f1f1f1;
-     text-align:center;
+  <body class="flex">
+    <div class="mg8 flex1 flex column">
+      <!--头部栏-->
+      <div style="height: 140px; z-index: 1" class="baise flex mgr10 yinying">
+        <!-- 头像 -->
+        <div class="baise yinying biaoti" style="width: 150px">
+          <img
+            src="https://hss1-9g55499qbe439e91-1314920047.tcloudbaseapp.com/hushisan.jpg"
+            width="130px;"
+            height="112px;"
+            class="touxiang"
+          />
+        </div>
+        <!-- 标题 -->
+        <div class="flex flex1 biaoti" style="align-items: center">
+          <h1 style="font-size: 60px; color: white">你好! --我是胡十三!</h1>
+        </div>
+      </div>
+      <!--内容栏-->
+      <div style="overflow: auto" class="neiron mg8 flex flex1">
+        <!--左边-->
+        <div style="flex: 3" class="mgr8 flex column">
+          <!-- 列表 -->
+          <div class="flex column">
+            <!-- 列表块 -->
+            <div style="height: 80px" class="mg8 baise yinying">
+              <p>
+                你好，我叫胡鑫洲，你们可以叫我十三。很高兴你能点开链接到我的网页，我是一枚来自湖南的打工仔，目前在还长沙苟且。
+                非常欢迎你的沟通和交流！
+              </p>
+            </div>
+            <div class="flex shuju">
+              <!-- 贴吧 -->
+              <div
+                style="height: 70px"
+                class="mg8 shujukuai flex1 baise yinying biaoti">
+                <a style="color:blanchedalmond" href="">手机上码的</a>
 
-     ">
-     <img alt="福十三" src="https://s1.ax1x.com/2022/11/07/xjsYNV.jpg" width="200px" height="150">
-     
-     </div> 
-    <div style="padding:15px;
-    max-width:760px;
-    margin:30px auto;
-    font-size:20px;
-    line-height:1.5">
-      <p>2022 11月 9日</p>
-      <p>凌晨两点，漆黑的晚上，没有寒风也没有冷雨，
-        胡十三鼓足了气跑到黑网吧，首次尝试上线我的个人网页。我的老师是康文昌。
-      </p>
-      <p>如果你浏览到了我的网页，欢迎沟通交流。Q3155327834胡十三</P>
-    
+
+              </div>
+              <div
+                style="height: 70px"
+                class="mg8 shujukuai flex1 baise yinying biaoti">
+                <a style="color:blanchedalmond" href="">13号手抄</a>
+
+
+              </div>
+              <div
+                style="height: 70px"
+                class="mg8 shujukuai flex1 baise yinying biaoti">
+                <a style="color:blanchedalmond" href="">15号手抄</a>
+
+
+              </div>
+              <div
+                style="height: 70px"
+                class="mg8 shujukuai flex1 baise yinying biaoti">
+                <a style="color:blanchedalmond" href="">16号手抄</a>
+
+
+              </div>
+              <div
+                style="height: 70px"
+                class="mg8 shujukuai flex1 baise yinying biaoti">
+                <a style="color:blanchedalmond" href="">17号手抄</a>
+
+
+              </div>
+             
+            </div>
+            <div style="height: 550px" class="mg8 baise yinying">
+              <b>----这里是专门写给导师看的@康文昌</b>
+              <p>
+                康老师你好，我白嫖你的课已经十来天了。一次偶然的机会刷到了你的抖音，你那接地气又富有感染力的讲课方式，
+                成功地让我这个小白多刷了好几个视频。然后，我就抱着试一下地心态跑到网吧跟了好几节课，依葫芦画瓢
+                画出来几个瓢，诶！凑合着还能看。当我在手机上看到自己传到腾讯云的高清网页时，我还兴奋了好一阵子
+                。上面和右边链接是我的作业。
+              </p>
+              <p>
+                HTML章节最后一个作业太难了，我感觉这烂网页根本卖不出去，
+                我又想跟进后面的课程这可怎么办！
+              </p>
+              <p>
+                为了表示我的衷心感谢，我已经给你的视频三连了。
+                如果你有点开我的网页，一定给我个简单的回复
+                ，我会高兴好几天的！
+              </p>
+              <div class="flex mgt40">
+                <p>手机上看到的网页---</p>
+                <img
+                  src="https://hss1-9g55499qbe439e91-1314920047.tcloudbaseapp.com/hushisan.jpg"
+                  width="90px;"
+                  height="112px;"
+                  class="touxiang"
+                />
+              </div>
+            </div>
+            <div style="height: 300px" class="mg8 baise yinying">
+              <p>
+                由于代码储备实在有限，很多细节不会处理
+                此网页是在康文昌网页模板的基础上移动剪切调整出的。
+                打开源码会看到很乱的样式和排版，也可能适应不了手机。
+              </p>
+              <p>
+                本来我想自己构建一个模板自己的网页,结果从开始出就卡住动不了。
+                所以为了不挫伤我的心态，我还是就着怎么简单怎么来的原则。
+                后面我会依照这个模板重新写一个新的。慢慢优化和补充细节。
+              </p>
+              <p>我是胡十三，欢迎你的点赞和回复！</p>
+            </div>
+          </div>
+          <!-- 文字栏 -->
+        </div>
+
+        <!--作业链接-->
+        <div
+          style="width: 200px; z-index: 2"
+          class="cebianlan baise yinying mg8 biaoti"
+        >
+          <!--头像-->
+          <div
+            style="padding: 10px; align-items: center; border-bottom: 1px solid"
+            class="flex"
+          >
+            <div style="margin-left: 20px">
+             <b style="color:blanchedalmond"> 胡十三的作业本</b></div>
+          </div>
+          <!--导航栏-->
+          <div class="flex1">
+            <!-- 导航条-->
+            <div class="daohang">
+              <div class="daohang">
+                <a class="daohang"；
+                   href="https://hss1-9g55499qbe439e91-1314920047.tcloudbaseapp.com/index11-07.html">
+                  第一行代码
+                </a>
+              </div>
+            
+              <div class="daohang">
+                <a class="daohang"；
+                   href="https://hss1-9g55499qbe439e91-1314920047.tcloudbaseapp.com/index1.html">
+                  第一个网页
+                </a>
+              </div>
+            
+              <div class="daohang">
+                <a class="daohang"；
+                   href="https://hss1-9g55499qbe439e91-1314920047.tcloudbaseapp.com/18 (1).html">
+                  完善网页
+                </a>
+              </div>
+            
+              <div class="daohang">
+                <a class="daohang"；
+                   href="https://hss1-9g55499qbe439e91-1314920047.tcloudbaseapp.com/index11-13.html">
+                  复刻元岛
+                </a>
+              </div>
+            
+              <div class="daohang">
+                <a class="daohang"；
+                   href="https://hss1-9g55499qbe439e91-1314920047.tcloudbaseapp.com/cn.html">
+                  复刻菜鸟模
+                </a>
+              </div>
+            
+              <div class="daohang">
+                <a class="daohang"；
+                   href="https://hss1-9g55499qbe439e91-1314920047.tcloudbaseapp.com/index.html">
+                  网页上线
+                </a>
+              </div>
+            
+          </div>
+        </div>
+      </div>
     </div>
-    <div style="
-     padding:50px ;
-     background-color:#f1f1f1;
-     text-align:center;
-     font-size:1px
-     height:80px">
-      太阳山小区
-    <P></p>
-    <a href="https://fushisan,com">福十三</p>
-    </p>
+    <!--尾部栏-->
+    <div class="biaoti" style="
+    padding:0px ;
   
+    text-align:center;
+    font-size:1px
+    height:5px">
+     
+   <P> 2022年 11月 太阳山小区
+   <a style="color:rgb(212, 209, 209)" href="#">福十三</a>
+   </p>
   </body>
 </html>
